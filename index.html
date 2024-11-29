@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+  content="width-device-width, initial-scale=1.0">
+  <title>This is Mads</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <a  class="logo">
+      This is <span>Mads</span>
+    </a>
+    <i class="bx bx-menu" id="menu-icon"></i>
+    <nav class="navbar">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+      
+    </nav>
+  </header>
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Hi!</h3>
+      <h1>It's Madelaine Alcarado</h1>
+      <h3>I'm a <span>Web Developer</span></h3>
+      <p>A beginner web developer with a passion for creating user-friendly, responsive websites. Currently building my skills in HTML, CSS, JavaScript, and various front-end technologies, and I'm excited to explore the world of web development further. </p>
+
+      <div class="social-icons">
+        <a href="https://www.facebook.com/madi.1197/"><i class='bx bxl-facebook-square'></i></a>
+        <a href="https://www.instagram.com/maddddd_97/"><i class='bx bxl-instagram-alt'></i></a>
+        <a href="https://github.com/madelainealcarado91"><i class='bx bxl-github'></i></a>
+      </div>
+
+      <a href="assets\Resume_Alcarado, Madelaine M..pdf" class="btn">Download CV</a>
+    </div>
+
+    <div class="home-img">
+      <img src="assets/image.png" alt="">
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="assets/image.png" alt="">
+    </div>
+
+    <div class="about-content">
+      <h2 class="heading">About <span>Me</span></h2>
+      <h3>Web<span> Developer</span></h3>
+      <p>Hello! I'm Mads, a graduating student pursuing a Bachelor of Science in Information Technology (BSIT). Throughout my academic journey, I have developed a strong foundation in programming, web development, and problem-solving, with a particular interest in creating user-friendly and innovative digital experiences. I have gained hands-on experience through various projects and coursework, and I am eager to apply my skills in a real-world setting.</p>
+      <a href="#portfolio" class="btn">See my works</a>
+    </div>
+  </section>
+  <section class="portfolio" id="portfolio">
+    <h2 class="heading">My <span>Projects</span></h2>
+
+    <div class="portfolio-container">
+      <div class="portfolio-box">
+        <img src="assets/1.jpg" alt="">
+        <div class="portfolio-info">
+          <h4>To Do List</h4>
+          <p>An app that helps users manage tasks by creating, organizing, and tracking to-do items.</p>
+          <a href="https://github.com/madelainealcarado91/ToDoList_App"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="assets/2.jpg" alt="">
+        <div class="portfolio-info">
+          <h4 style="font-size: 2.3rem;">Employee Management System</h4>
+          <p>For managing employee data such as personal information and job details.</p>
+          <a href="https://github.com/madelainealcarado91/EMS/tree/main/emp_system"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="assets/3.jpg" alt="">
+        <div class="portfolio-info">
+          <h4>Simple Login Page</h4>
+          <p>An authentication app that allows users to securely log in to a website or system using a username and password.</p>
+          <a href="https://github.com/madelainealcarado91/EMS/tree/main/emp_system"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="assets/4.jpg" alt="">
+        <div class="portfolio-info">
+          <h4>Contact Form</h4>
+          <p>It allows users to save important Contact Information details using a Website</p>
+          <a href="https://github.com/madelainealcarado91/contactForm/tree/main/contactForm"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="assets/5.jpg" alt="">
+        <div class="portfolio-info">
+          <h4 style="font-size: 2.6rem;">Hotel Reservation System</h4>
+          <p>An app that enables users to book hotel rooms and manage reservations online.</p>
+          <a href="https://github.com/madelainealcarado91/hotelSystem"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="assets/6.jpg" alt="">
+        <div class="portfolio-info">
+          <h4>News Magazine</h4>
+          <p>A platform that provides users with up-to-date news articles, reports, and other informational content.</p>
+          <a href="https://news-magazine-design.netlify.app/"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p class="copyright">
+          2023 Madelaine Alcarado  | Personal Portfolio
+      </p>
+    </footer>
+  </section>
+  
+
+  
+
+  <script>
+    const navLinks = document.querySelectorAll('.nav-link');
+    let menuIcon = document.querySelector('#menu-icon');
+    let navbar = document.querySelector('.navbar');
+
+    menuIcon.onclick = () => {
+      menuIcon.classList.toggle('bx-x');
+      navbar.classList.toggle('active');
+    }
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            navLinks.forEach(link => link.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+  </script>
+</body> 
+</html>
